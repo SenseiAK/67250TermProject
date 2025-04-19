@@ -187,9 +187,8 @@ footer {
 .profile-box img {
   width: 100%;
   max-width: 150px;
-  margin: 0 auto 1em auto; /* 👈 This centers the image horizontally */
-  display: block; /* 👈 Required for margin auto to work */
-}
+  margin: 0 auto 1em auto;
+  display: block;
 
 .profile-box h3 {
   margin-bottom: 0.5em;
@@ -200,4 +199,5 @@ footer {
   padding: 1em 0;
   background-color: #000;
   color: #aaa;
+}
 }
