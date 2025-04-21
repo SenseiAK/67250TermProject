@@ -1,59 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SlidesPro | AI Presentation Builder</title>
   <link rel="stylesheet" href="static/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script>
+    function toggleDropdown() {
+      const content = document.getElementById("referenceDropdown");
+      content.classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
-  
-<header>
-  <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 2em;">
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>        
-        <li><a href="views/howitworks.html">How It Works</a></li>
-        <li><a href="views/pricing.html">Pricing</a></li>
-        <li><a href="views/about.html">About Us</a></li>
-        <li><a href="views/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <img src="static/images/logo.png" alt="SlidesPro Logo" class="logo">
+  <div class="background-wrapper">
+    <div class="dark-overlay"></div>
+
+    <div class="page-wrapper">
+      <!-- Header Navigation -->
+      <header class="header">
+        <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; padding: 0 2em;">
+          <nav aria-label="Main Navigation">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="views/howitworks.html">How It Works</a></li>
+              <li><a href="views/pricing.html">Pricing</a></li>
+              <li><a href="views/about.html">About Us</a></li>
+              <li><a href="views/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="static/images/logo.png" alt="SlidesPro Logo" class="logo" style="width: 80px;">
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" style="text-align: center; margin-bottom: 3em;">
+          <div style="max-width: 1600px; margin: 0 auto;">
+            <img src="static/images/logo.png" alt="SlidesPro Logo" class="main-logo fade-in delay-0" style="display: block; margin: 0 auto; width: 240px;">          </div>     
+          <h1 class="fade-in delay-1">Welcome to SlidesPro</h1>
+          <p class="fade-in delay-2" style="max-width: 800px; margin: 1em auto;">
+            SlidesPro is an AI-powered platform that transforms your ideas into consulting-quality presentations in minutes.
+            Whether you're a founder, consultant, or student, SlidesPro helps you save time and impress your audience.
+          </p>
+          <a href="views/howitworks.html">
+            <button class="cta-button fade-in delay-3">Learn How It Works</button>
+          </a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="feature-box fade-in delay-4">
+          <h2 style="color: #fff;">Key Features</h2>
+          <ul class="features-list">
+            <li>Auto-generates slides from bullet points or summaries</li>
+            <li>Built-in MBB-style formatting and layouts</li>
+            <li>Smart chart and visualization generator from Excel/CSV</li>
+            <li>Fully editable slides with real-time preview</li>
+          </ul>
+        </section>
+
+        <!-- Sources Section (Dropdown) -->
+        <section class="source-box fade-in delay-5">
+          <h3>Sources & References</h3>
+          <button class="dropdown-toggle" onclick="toggleDropdown()">Show References</button>
+          <div id="referenceDropdown" class="dropdown-content">
+            <ul>
+              <li>Chen, J., Zhang, C., & Xu, Y. (2020). <em>User experience and AI-based interface design</em>. <i>Journal of HCI, 36(2), 101–120.</i></li>
+              <li>Davenport, T. H., & Ronanki, R. (2018). <em>Artificial intelligence for the real world</em>. <i>HBR, 96(1), 108–116.</i></li>
+              <li>Gartner, Inc. (2020). <em>Market guide for AI-based productivity tools</em>. Retrieved from gartner.com</li>
+              <li>Maurya, A. (2012). <em>Running Lean</em>. O’Reilly Media.</li>
+              <li>Research Nester. (2024). <em>Presentation software market outlook 2037</em>. researchnester.com</li>
+              <li>Yang, S., & Lee, J. (2019). <em>Freemium pricing strategies in SaaS</em>. <i>ISR, 30(3), 915–932.</i></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        &copy; 2025 SlidesPro. All rights reserved.
+      </footer>
+    </div>
   </div>
-</header>
-
-  
-<main>
-  <img src="static/images/logo.png" alt="SlidesPro Logo" style="max-width: 300px; width: 100%; margin-bottom: 1em;">
-
-  <h1>Welcome to SlidesPro</h1>
-  <p>SlidesPro is an AI-powered platform that transforms your ideas into consulting-quality presentations in minutes. Whether you're a founder, consultant, or student, SlidesPro helps you save time and impress your audience.</p>
-
-  <h2>Features</h2>
-  <ul>
-    <li>Auto-generates slides from bullet points or summaries</li>
-    <li>Built-in MBB-style formatting and layouts</li>
-    <li>Smart chart and visualization generator from Excel/CSV</li>
-    <li>Fully editable slides with real-time preview</li>
-  </ul>
-
-  <p><a href="views/howitworks.html"><button class="cta-button">Learn How It Works</button></a></p>
-  <p><small><small>
-Chen, J., Zhang, C., & Xu, Y. (2020). User experience and AI-based interface design: A case study of intelligent presentation systems. Journal of Human–Computer Interaction, 36(2), 101–120
-
-Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. Harvard Business Review, 96(1), 108–116.
-
-Gartner, Inc. (2020). Market guide for AI-based productivity tools. Retrieved from https://www.gartner.com
-
-Maurya, A. (2012). Running Lean: Iterate from Plan A to a Plan That Works. O’Reilly Media.
-
-Research Nester. (2024). Presentation software market size, demand analysis & opportunity outlook 2037. https://www.researchnester.com/reports/presentation-software-market/5807
-
-Yang, S., & Lee, J. (2019). Exploring freemium pricing strategies in software-as-a-service (SaaS) products. Information Systems Research, 30(3), 915–932. https://pubsonline.informs.org/doi/10.1287/isre.2019.0842
-  </small></small></p>
-</main>
-
-  <footer>&copy; 2025 SlidesPro. All rights reserved.</footer>
 </body>
 </html>

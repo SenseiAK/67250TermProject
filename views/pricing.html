@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pricing</title>
   <link rel="stylesheet" href="../static/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-  </style>
 </head>
 <body>
-  <header>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 2em;">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="howitworks.html">How It Works</a></li>
-          <li><a href="pricing.html" class="active">Pricing</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <img src="../static/images/logo.png" alt="SlidesPro Logo" class="logo">
+  <div class="background-wrapper pricing-bg">
+    <div class="dark-overlay"></div>
+    <div class="page-wrapper">
+
+      <!-- Header -->
+      <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 2em;">
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="howitworks.html">How It Works</a></li>
+              <li><a href="pricing.html" class="active">Pricing</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="../static/images/logo.png" alt="SlidesPro Logo" class="logo">
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <h1 style="text-align: center;">Pricing Plans</h1>
+        <p style="text-align: center; margin-bottom: 2em;">
+          Choose the plan that fits your needs—whether you're just getting started or scaling with a team.
+        </p>
+
+        <div class="table-wrapper modern-box">
+          <table class="modern-pricing-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="tier-header">Free</th>
+                <th class="tier-header">Pro</th>
+                <th class="tier-header">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>AI slide generation</td><td class="check"></td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Basic design templates</td><td class="check"></td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Export to PDF</td><td class="check"></td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Export to PowerPoint</td><td class="dot">•</td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Custom fonts & colors</td><td class="dot">•</td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Chart generation from Excel/CSV</td><td class="dot">•</td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Real-time editor</td><td class="dot">•</td><td class="check"></td><td class="check"></td></tr>
+              <tr><td>Team collaboration</td><td class="dot">•</td><td class="dot">•</td><td class="check"></td></tr>
+              <tr><td>Brand asset integration</td><td class="dot">•</td><td class="dot">•</td><td class="check"></td></tr>
+              <tr><td>Admin analytics dashboard</td><td class="dot">•</td><td class="dot">•</td><td class="check"></td></tr>
+              <tr><td>Priority support</td><td class="dot">•</td><td class="dot">•</td><td class="check"></td></tr>
+            </tbody>
+            <tfoot>
+              <tr class="price-row">
+                <td><strong>Price</strong></td>
+                <td><strong>$0</strong></td>
+                <td><strong>$10.99/mo or $100/yr</strong></td>
+                <td><strong>Contact Us</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>&copy; 2025 SlidesPro. All rights reserved.</footer>
+
     </div>
-  </header>
-
-  <main>
-    <h1>Pricing Plans</h1>
-    <p>Choose the plan that fits your needs—whether you're just getting started or scaling with a team.</p>
-
-    <table class="pricing-table">
-      <tr class="tier-header">
-        <th>Feature</th>
-        <th>Free<br><small>$0</small></th>
-        <th>Pro<br><small>$10.99/month or $100/year</small></th>
-        <th>Enterprise<br><small>Custom Pricing</small></th>
-      </tr>
-      <tr><td>AI slide generation</td><td class="check">✅</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Basic design templates</td><td class="check">✅</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Export to PDF</td><td class="check">✅</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Export to PowerPoint</td><td class="dot">•</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Custom fonts & colors</td><td class="dot">•</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Chart generation from Excel/CSV</td><td class="dot">•</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Real-time editor</td><td class="dot">•</td><td class="check">✅</td><td class="check">✅</td></tr>
-      <tr><td>Team collaboration</td><td class="dot">•</td><td class="dot">•</td><td class="check">✅</td></tr>
-      <tr><td>Brand asset integration</td><td class="dot">•</td><td class="dot">•</td><td class="check">✅</td></tr>
-      <tr><td>Admin analytics dashboard</td><td class="dot">•</td><td class="dot">•</td><td class="check">✅</td></tr>
-      <tr><td>Priority support</td><td class="dot">•</td><td class="dot">•</td><td class="check">✅</td></tr>
-    </table>
-  </main>
-
-  <footer>&copy; 2025 SlidesPro. All rights reserved.</footer>
+  </div>
 </body>
 </html>
